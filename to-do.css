@@ -1,0 +1,150 @@
+body {
+    font-family: monospace;
+    background-image: url('https://cdn160.picsart.com/upscale-274125651004211.png?r1024x1024');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.8em; 
+}
+
+#new-task, #add-task, #tasks li, #current-date, .calendar-day {
+    font-weight: bold; 
+}
+
+h1 {
+    color: #b19cd9; 
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.todo-list, .calendar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #ffb6c1; 
+    border-radius: 5px;
+}
+
+#add-task {
+    padding: 10px 15px;
+    border: none;
+    background-color: #add8e6; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.8em;
+}
+
+#tasks {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#tasks li {
+    background-color: #ffb6c1; 
+    border: 1px solid #add8e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+#tasks li button {
+    background-color: #b19cd9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.7em;
+}
+
+#calendar {
+    border: 2px solid #ffb6c1; 
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#current-date {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #b19cd9; 
+    text-align: center;
+}
+
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.add-event-button {
+    display: none;
+    background-color: #add8e6; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 0.5em;
+}
+
+.event-input {
+    display: none;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.calendar-day.special {
+    background-color: #b19cd9; 
+    color: white;
+}
